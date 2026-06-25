@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rivera | Creative Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <i class="fa-solid fa-code logo-accent"></i> AR.<span>dev</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#resume" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" title="Toggle Theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation menu">
+                    <i class="fa-solid fa-bars-staggered open-menu"></i>
+                    <i class="fa-solid fa-xmark close-menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home/Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-greeting">Hi there, I am</span>
+                <h1 class="hero-name">Alex Rivera</h1>
+                <h2 class="hero-title">Creative Full Stack Engineer & DevOps Explorer</h2>
+                <p class="hero-description">I build highly optimized web experiences and automated workflows. Focused on writing clean code, designing premium UI/UX, and establishing scalable CI/CD pipelines.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-trend-up"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch <i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="avatar-card">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-inner">
+                        <!-- Generative SVG avatar profile for beautiful tech aesthetic -->
+                        <svg class="avatar-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="svg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#6366f1" />
+                                    <stop offset="100%" stop-color="#10b981" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="90" fill="url(#svg-grad)" opacity="0.15" />
+                            <path d="M40,160 Q100,100 160,160" fill="none" stroke="url(#svg-grad)" stroke-width="8" stroke-linecap="round" />
+                            <circle cx="100" cy="90" r="35" fill="none" stroke="url(#svg-grad)" stroke-width="8" />
+                            <!-- Decorative code tags -->
+                            <text x="25" y="60" fill="url(#svg-grad)" font-family="monospace" font-weight="bold" font-size="20">&lt;/&gt;</text>
+                            <text x="135" y="80" fill="url(#svg-grad)" font-family="monospace" font-weight="bold" font-size="24">&#123; &#125;</text>
+                        </svg>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fa-brands fa-react react-icon"></i> React.js
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa-brands fa-docker docker-icon"></i> Docker
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-down">
+            <a href="#about" aria-label="Scroll down to About section">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="sub-heading">My Profile</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-details">
+                    <h3>Crafting Solutions with Code & Systems</h3>
+                    <p>I am a passionate software engineer currently pursuing frontend and DevOps internships. I love bridge building—connecting beautiful, intuitive client interfaces with robust, automated pipelines in the cloud.</p>
+                    <p>My goal is always to deliver software that is performant, scalable, and extremely pleasant to interact with. When I'm not coding, you can find me exploring open-source scripts, tweaking configurations, or reading up on system design.</p>
+                    
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-num" data-val="12">0+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" data-val="3">0</span>
+                            <span class="stat-label">Verified Certifications</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" data-val="99">0%</span>
+                            <span class="stat-label">Uptime Goal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-skills">
+                    <h3>My Skill Matrix</h3>
+                    <div class="skills-container">
+                        <!-- Skill 1 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Frontend Architecture (HTML/CSS/JS/React)</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 2 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">UI/UX Craftsmanship & Animations</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 3 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CI/CD & DevOps Automation (GitHub Actions, Docker)</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 4 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js / Database / API Integrations</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="sub-heading">My Portfolio</span>
+                <h2 class="section-title">Selected Projects</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="project-filters">
+                <button class="proj-filter-btn active" data-filter="all">All Works</button>
+                <button class="proj-filter-btn" data-filter="frontend">Frontend Dev</button>
+                <button class="proj-filter-btn" data-filter="automation">Automation & DevOps</button>
+                <button class="proj-filter-btn" data-filter="design">Creative UI</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="design">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80" alt="Image Gallery App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="../CodeAlpha_ImageGallery/index.html" target="_blank" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com" target="_blank" title="GitHub Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Creative UI</span>
+                        <h3 class="project-title">Elite Image Portal</h3>
+                        <p class="project-desc">A premium gallery web application featuring glassmorphism elements, live search filters, active carousel, zoom in/out, and fullscreen slideshow controls.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>Vanilla CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="frontend">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=600&q=80" alt="Quantum Calculator">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="../CodeAlpha_Calculator/index.html" target="_blank" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com" target="_blank" title="GitHub Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Frontend Dev</span>
+                        <h3 class="project-title">Quantum Calc System</h3>
+                        <p class="project-desc">An advanced calculator built with rich Soft UI. Supports standard, algebraic, and custom scientific expressions with automated localStorage logging.</p>
+                        <div class="project-tags">
+                            <span>ES6 JS</span>
+                            <span>Theme Engine</span>
+                            <span>Grid Layout</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="automation">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="CI/CD Pipeline Architecture">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" title="Deployment System"><i class="fa-solid fa-link-slash"></i></a>
+                                <a href="https://github.com" target="_blank" title="GitHub Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Automation</span>
+                        <h3 class="project-title">DevOps Microservices Pipeline</h3>
+                        <p class="project-desc">Engineered GitHub Actions workflow to build multi-stage Docker images, perform lint testing, scan containers for vulnerability, and deploy automatically.</p>
+                        <div class="project-tags">
+                            <span>Docker</span>
+                            <span>CI/CD</span>
+                            <span>Github Actions</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience/Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="sub-heading">My Journey</span>
+                <h2 class="section-title">Timeline Experience</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 2026 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer Intern</h3>
+                        <h4>CodeAlpha (Remote)</h4>
+                        <p>Completing specialized projects in modern web architectures. Creating modular user interfaces and integrating responsive user states with high-fidelity performance audits.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2026 - May 2026</div>
+                    <div class="timeline-content">
+                        <h3>Open Source Contributor</h3>
+                        <h4>GitHub DevOps Community</h4>
+                        <p>Contributed to community shell scripts, optimized workflow containers, and participated in refactoring automated test-suite pipelines for microservice platforms.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>B.Sc. Computer Science Student</h3>
+                        <h4>State Technical University</h4>
+                        <p>Studied core algorithms, data structures, relational database architecture, software development lifecycles, and foundations of cloud computing architectures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="sub-heading">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact info cards -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Have a project in mind, need a developer, or want to collaborate? Reach out via the form, or direct connection channels below.</p>
+                    
+                    <div class="info-list">
+                        <div class="info-card">
+                            <i class="fa-solid fa-envelope info-icon"></i>
+                            <div class="info-text">
+                                <span>Email Me</span>
+                                <strong>alex.rivera.dev@gmail.com</strong>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fa-brands fa-linkedin info-icon"></i>
+                            <div class="info-text">
+                                <span>LinkedIn Portal</span>
+                                <strong>linkedin.com/in/alex-rivera-dev</strong>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fa-brands fa-whatsapp info-icon"></i>
+                            <div class="info-text">
+                                <span>WhatsApp Connect</span>
+                                <strong>+1 (555) 234-5678</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="form-name" required placeholder=" ">
+                            <label for="form-name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="form-email" required placeholder=" ">
+                            <label for="form-email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="form-subject" required placeholder=" ">
+                            <label for="form-subject">Subject Topic</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-message" required placeholder=" " rows="5"></textarea>
+                            <label for="form-message">Detailed Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Alert Success states -->
+                    <div class="form-success-alert" id="form-success">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h4>Message Sent Successfully!</h4>
+                        <p>Thank you for reaching out, Alex. I will review your submission and reply back within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <i class="fa-solid fa-code"></i> AR.<span>dev</span>
+            </div>
+            <p class="footer-text">&copy; 2026 Alex Rivera Portfolio. Built for CodeAlpha Internship. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://whatsapp.com" target="_blank" aria-label="WhatsApp Chat"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top-btn" title="Back to Top" aria-label="Scroll to top of page">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+</body>
+</html>
